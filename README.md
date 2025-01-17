@@ -13,6 +13,23 @@
 - 支持 https 访问面板（自备域名 + ssl 证书）
 - 更多高级配置项，详见面板
   
+# 安装&升级
+
+如这方式安装失败，请用下面`上传到VPS根目录安装`的方式
+```
+wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/Setout8/x-ui-freebsd/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh
+```
+# 上传到VPS根目录安装（以serv00为例）
+
+1. 下载`x-ui.sh`文件到本地，文件名保持不变
+2. 将`x-ui.sh`文件上传至VPS根目录，如：登陆`VPS面板`→图标`File manager`→根目录`My Files`
+3. SSH登陆VPS,输入`chmod +x x-ui.sh`获得权限，再输入`./x-ui.sh`运行脚本，接着按提示操作即可
+
+## 手动安装&升级
+
+1. 首先从 https://github.com/Setout8/x-ui-freebsd/releases 下载最新的压缩包，一般选择 `amd64`架构
+2. 然后将这个压缩包上传到服务器的 `/home/[username]`目录下，
+  
 # 安装须注意
 
 1. 在安装前，请先准备好用户名，密码和两个端口（面板访问端口和流量监控端口）！
@@ -31,23 +48,6 @@ crontab x-ui.cron
 rm x-ui.cron
 nohup ./x-ui run > ./x-ui.log 2>&1 &
 ```
-
-# 安装&升级
-
-如这方式安装失败，请用下面`上传到VPS根目录安装`的方式
-```
-wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/Setout8/x-ui-freebsd/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh
-```
-# 上传到VPS根目录安装（以serv00为例）
-
-1. 下载`x-ui.sh`文件到本地，文件名保持不变
-2. 将`x-ui.sh`文件上传至VPS根目录，如：登陆`VPS面板`→图标`File manager`→根目录`My Files`
-3. SSH登陆VPS,输入`chmod +x x-ui.sh`获得权限，再输入`./x-ui.sh`运行脚本，接着按提示操作即可
-
-## 手动安装&升级
-
-1. 首先从 https://github.com/Setout8/x-ui-freebsd/releases 下载最新的压缩包，一般选择 `amd64`架构
-2. 然后将这个压缩包上传到服务器的 `/home/[username]`目录下，
 
 ## SSL证书申请
 
