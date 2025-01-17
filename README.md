@@ -64,4 +64,4 @@ wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/pare
 各种小白问题看得血压很高
 
 # 特别感谢
-https://github.com/vaxilu/x-ui
+[parentalclash](https://github.com/parentalclash/x-ui-freebsd)、[vaxilu](https://github.com/vaxilu/x-ui)
