@@ -42,7 +42,7 @@ wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/Seto
 
 ## 手动安装&升级
 
-1. 首先从 https://github.com/parentalclash/x-ui-freebsd/releases 下载最新的压缩包，一般选择 `amd64`架构
+1. 首先从 https://github.com/Setout8/x-ui-freebsd/releases 下载最新的压缩包，一般选择 `amd64`架构
 2. 然后将这个压缩包上传到服务器的 `/home/[username]`目录下，
 
 ## SSL证书申请
