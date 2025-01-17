@@ -57,11 +57,5 @@ wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/Seto
 
 - FreeBSD 14+
 
-# 常见问题
-
-## issue 关闭
-
-各种小白问题看得血压很高
-
 # 特别感谢
 [parentalclash](https://github.com/parentalclash/x-ui-freebsd)、[vaxilu](https://github.com/vaxilu/x-ui)
