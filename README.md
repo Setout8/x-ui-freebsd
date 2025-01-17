@@ -33,7 +33,7 @@ nohup ./x-ui run > ./x-ui.log 2>&1 &
 
 # 安装&升级（如这方式安装失败，请用下面上传的方式）
 ```
-wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/parentalclash/x-ui-freebsd/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh install
+wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/Setout8/x-ui-freebsd/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh install
 ```
 # 上传到VPS根目录安装（以serv00为例）
 1. 下载`x-ui.sh`文件到本地，文件名保持不变
