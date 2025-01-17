@@ -18,6 +18,11 @@
 ```
 wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/parentalclash/x-ui-freebsd/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh install
 ```
+# 上传到VPS根目录安装（以serv00为例）
+在安装前，请先准备好用户名，密码和两个端口（面板访问端口和流量监控端口）！
+1. 下载“x-ui.sh”文件到本地，文件名保持不变
+2. 将“x-ui.sh”文件上传至VPS根目录，如：登陆VPS面板→图标“File manager”→根目录“My Files”
+3. SSH登陆vps,输入`chmod +x x-ui.sh`获得权限，再输入`./x-ui.sh`运行脚本，接着按提示操作即可
 
 ## 手动安装&升级
 
