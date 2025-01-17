@@ -96,7 +96,7 @@ install_x-ui() {
 
     if [ $# == 0 ]; then
         last_version=$(curl -Ls "https://api.github.com/repos/Setout8/x-ui-freebsd/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-        wget -N --no-check-certificate -O x-ui-${release}-${arch}.tar.gz https://github.com/Setout8/x-ui-freebsd/releases/x-ui-${release}-${arch}.tar.gz
+        wget -N --no-check-certificate -O x-ui-${release}-${arch}.tar.gz https://github.com/Setout8/x-ui-freebsd/releases/tag/x-ui-${release}-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 x-ui 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
